@@ -8,7 +8,7 @@ import java.util.List;
 public class MultiLoggerTest {
 
     @Test
-    public void countArrayElements(){
+    public void countArrayElements() {
         List<MultiLogger> testMultilogger = new ArrayList<>();
 
         // Заполнение массива
@@ -20,6 +20,22 @@ public class MultiLoggerTest {
         int actual = testMultilogger.size();
 
         Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testLogMethod() {
+        MultiLogger testMultiLogger = MultiLogger.getInstance();
+        int hasError = 0;
+        try {
+            testMultiLogger.log("Привет");
+        } catch (Exception e) {
+            hasError = 1;
+        }
+
+        int expect = 0;
+        int actual = hasError;
+
+        Assertions.assertEquals(expect, actual);
     }
 
 }
