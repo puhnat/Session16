@@ -11,7 +11,7 @@ public class MultiLogger {
 
     private static volatile MultiLogger[] INSTANCE = new MultiLogger[MAX_SIZE];
 
-    protected MultiLogger() {
+    public MultiLogger() {
         throw new IllegalStateException("Это мультитон!");
     }
 

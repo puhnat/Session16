@@ -6,7 +6,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args){
 
-        List<MultiLogger> testMultilogger = new ArrayList<>();
+        /*List<MultiLogger> testMultilogger = new ArrayList<>();
 
         // Заполнение массива
         for (int i = 0; i < MultiLogger.MAX_SIZE + 5; i++) {
@@ -44,7 +44,7 @@ public class Main {
         t1.start();
         t2.start();
         t3.start();
-        t4.start();
+        t4.start();*/
 
     }
 }
